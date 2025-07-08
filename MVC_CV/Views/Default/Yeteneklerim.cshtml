@@ -1,0 +1,45 @@
+﻿@using MVC_CV.Models.Entity
+@model List<TblYeteneklerim>
+
+<div class="resume-section-content">
+    <h2 class="mb-5">Skills</h2>
+    <div class="subheading mb-3">Programming Languages & Tools</div>
+    <ul class="list-inline dev-icons">
+
+        <li class="list-inline-item">
+            <img src="~/Content/devicon-master/devicon-master/icons/html5/html5-original.svg" alt="HTML5" style="height:50px;">
+        </li>
+
+        <li class="list-inline-item">
+            <img src="~/Content/devicon-master/devicon-master/icons/css3/css3-original.svg" alt="CSS" style="height:50px;" />
+        </li>
+
+        <li class="list-inline-item">
+            <img src="~/Content/devicon-master/devicon-master/icons/javascript/javascript-original.svg" alt="JavaScript" style="height:50px;" />
+        </li>
+
+        <li class="list-inline-item">
+            <img src="~/Content/devicon-master/devicon-master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" style="height:50px;">
+        </li>
+
+        <li class="list-inline-item">
+            <img src="~/Content/devicon-master/devicon-master/icons/csharp/csharp-original.svg" alt="C#" style="height:50px;" />
+        </li>
+
+        <li class="list-inline-item">
+            <img src="~/Content/devicon-master/devicon-master/icons/dotnetcore/dotnetcore-original.svg" alt=".NetCore" style="height:50px;" />
+        </li>
+
+
+    </ul>
+    <div class="subheading mb-3">Workflow</div>
+    <ul class="fa-ul mb-0">
+        @foreach (var x in Model) { 
+        <li>
+            <span class="fa-li"><i class="fas fa-check"></i></span>
+            @x.Yetenek
+        </li>
+        }
+
+    </ul>
+</div>
