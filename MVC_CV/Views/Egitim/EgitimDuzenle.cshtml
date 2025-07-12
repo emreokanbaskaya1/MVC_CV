@@ -1,0 +1,32 @@
+﻿@model MVC_CV.Models.Entity.TblEgitim
+@{
+    ViewBag.Title = "EgitimEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4>New Education Editing Page</h4>
+<br />
+<form method="post">
+
+    @Html.Label("Title")
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Baslik, "", new { @style = "color:red" })
+    <br />
+    @Html.Label("Subtitle1")
+    @Html.TextBoxFor(x => x.AltBaslik, new { @class = "form-control" })
+    <br />
+    @Html.Label("Subtitle2")
+    @Html.TextBoxFor(x => x.AltBaslik2, new { @class = "form-control" })
+    <br />
+    @Html.Label("Date")
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+    <br />
+    @Html.Label("Grade Points Average")
+    @Html.TextBoxFor(x => x.GNO, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-success">Update</button>
+
+</form>
+

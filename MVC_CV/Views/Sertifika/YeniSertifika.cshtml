@@ -1,0 +1,23 @@
+﻿@model MVC_CV.Models.Entity.TblSertifikalarim
+@{
+    ViewBag.Title = "SertifikaGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4>New Certification Adding Page</h4>
+<br />
+<form method="post">
+
+    @Html.Label("Certification Description")
+    @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })
+    <br />
+    @Html.Label("Date")
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-primary">Update</button>
+
+</form>
+
+
