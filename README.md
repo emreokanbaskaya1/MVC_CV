@@ -88,7 +88,7 @@ Presents the user's personal interests and hobbies in bullet-list format. Helps 
 
 ### 🏅 Certifications Section
 
-Lists professional certifications with FontAwesome icons. Each item supports clickable URLs, allowing users to showcase verified achievements.
+Lists professional certifications with FontAwesome icons. 
 
 <img width="600" height="1079" alt="Screenshot_6" src="https://github.com/user-attachments/assets/d306ecb6-54e5-473d-9b09-122a39483530" />
 
