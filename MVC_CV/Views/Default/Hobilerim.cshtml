@@ -4,10 +4,22 @@
 
 <div class="resume-section-content">
     <h2 class="mb-5">Interests</h2>
-    @foreach(var x in Model){
+    <ul>
+        @foreach (var x in Model)
+        {
+            if (!string.IsNullOrWhiteSpace(x.Aciklama1))
+            {
+                <li>@x.Aciklama1.TrimStart('-', ' ')</li>
+            }
+            if (!string.IsNullOrWhiteSpace(x.Aciklama2))
+            {
+                foreach (var item in x.Aciklama2.Split(new[] { "\r\n", "\n" }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    <li>@item.TrimStart('-', ' ')</li>
+                }
+            }
+        }
+    </ul>
 
-    <p>@x.Aciklama1</p>
-    <p class="mb-0">@x.Aciklama2</p>
 
-    }
 </div>

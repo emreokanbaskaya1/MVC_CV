@@ -30,15 +30,32 @@
             <img src="~/Content/devicon-master/devicon-master/icons/dotnetcore/dotnetcore-original.svg" alt=".NetCore" style="height:50px;" />
         </li>
 
+        <li class="list-inline-item">
+            <img src="~/Content/devicon-master/devicon-master/icons/python/python-original.svg" alt=".NetCore" style="height:50px;" />
+        </li>
+
+        <li class="list-inline-item">
+            <img src="~/Content/devicon-master/devicon-master/icons/pycharm/pycharm-original.svg" alt=".NetCore" style="height:50px;" />
+        </li>
+
+        <li class="list-inline-item">
+            <img src="~/Content/devicon-master/devicon-master/icons/datagrip/datagrip-original.svg" alt=".NetCore" style="height:50px;" />
+        </li>
+
+        <li class="list-inline-item">
+            <img src="~/Content/devicon-master/devicon-master/icons/arduino/arduino-original.svg" alt=".NetCore" style="height:50px;" />
+        </li>
+
 
     </ul>
     <div class="subheading mb-3">Workflow</div>
     <ul class="fa-ul mb-0">
-        @foreach (var x in Model) { 
-        <li>
-            <span class="fa-li"><i class="fas fa-check"></i></span>
-            @x.Yetenek
-        </li>
+        @foreach (var x in Model)
+        {
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                @x.Yetenek
+            </li>
         }
 
     </ul>
