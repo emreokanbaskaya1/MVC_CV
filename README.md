@@ -37,6 +37,7 @@
 - 🎨 **Bootstrap / HTML / CSS / JavaScript**
 - 🔠 **FontAwesome Icons**
 
+---
 
 ## 🌐 Frontend – Dynamic CV Website
 
@@ -44,10 +45,17 @@ The frontend of this project showcases a modern, responsive personal CV page. It
 
 Below are some example pages from the live UI:
 
+---
+
 ### 🧍 About Section – Frontend View
 
 This section introduces the user with a clean and responsive layout, displaying name, contact details, and a detailed self-description. It reflects full-stack skills, academic background, and professional focus.
 <img width="600" height="1079" alt="Screenshot_2" src="https://github.com/user-attachments/assets/6891adeb-2b3a-4792-aecb-f651cc9ef2c2" />
 
+---
 
+### 💼 Experience Section
 
+This section lists the user's work experience dynamically. Each entry includes a title, position, timeline, and detailed description. Admins can manage these items via the backend panel, and changes are reflected instantly on the frontend.
+
+<img width="600" height="1079" alt="Screenshot_1" src="https://github.com/user-attachments/assets/456384ff-2de9-4afa-a762-a4f28b967ba0" />
