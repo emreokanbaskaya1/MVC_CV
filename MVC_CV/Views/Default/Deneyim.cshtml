@@ -10,7 +10,15 @@
         <div class="flex-grow-1">
             <h3 class="mb-0">@x.Baslik</h3>
             <div class="subheading mb-3">@x.AltBaslik</div>
-            <p>@x.Aciklama</p>
+            <ul>
+                @if (!string.IsNullOrWhiteSpace(x.Aciklama))
+                {
+                    foreach (var line in x.Aciklama.Split(new[] { "\r\n", "\n" }, StringSplitOptions.RemoveEmptyEntries))
+                    {
+                        <li>@line.TrimStart('-', ' ')</li>
+                    }
+                }
+            </ul>
         </div>
         <div class="flex-shrink-0"><span class="text-primary">@x.Tarih</span></div>
     </div>
