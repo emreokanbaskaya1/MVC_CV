@@ -44,7 +44,7 @@ The frontend of this project showcases a modern, responsive personal CV page. It
 
 Below are some example pages from the live UI:
 
-## 🧍 About Section – Frontend View
+### 🧍 About Section – Frontend View
 
 This section introduces the user with a clean and responsive layout, displaying name, contact details, and a detailed self-description. It reflects full-stack skills, academic background, and professional focus.
 <img width="600" height="1079" alt="Screenshot_2" src="https://github.com/user-attachments/assets/6891adeb-2b3a-4792-aecb-f651cc9ef2c2" />
