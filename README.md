@@ -37,6 +37,13 @@
 - 🎨 **Bootstrap / HTML / CSS / JavaScript**
 - 🔠 **FontAwesome Icons**
 
+
+## 🌐 Frontend – Dynamic CV Website
+
+The frontend of this project showcases a modern, responsive personal CV page. It includes clean layouts, section-based content, and styling powered by Bootstrap and Razor View Engine.
+
+Below are some example pages from the live UI:
+
 ## 🧍 About Section – Frontend View
 
 This section introduces the user with a clean and responsive layout, displaying name, contact details, and a detailed self-description. It reflects full-stack skills, academic background, and professional focus.
