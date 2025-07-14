@@ -59,3 +59,45 @@ This section introduces the user with a clean and responsive layout, displaying 
 This section lists the user's work experience dynamically. Each entry includes a title, position, timeline, and detailed description. Admins can manage these items via the backend panel, and changes are reflected instantly on the frontend.
 
 <img width="600" height="1079" alt="Screenshot_1" src="https://github.com/user-attachments/assets/456384ff-2de9-4afa-a762-a4f28b967ba0" />
+
+---
+### 🎓 Education Section
+
+Displays the user's academic background with institution names, degrees, and time periods. Clean layout ensures readability across devices.
+
+<img width="600" height="1077" alt="Screenshot_3" src="https://github.com/user-attachments/assets/446ff603-f58c-4372-b0b6-e08e8ecf0db2" />
+
+
+---
+
+### 🧠 Skills Section
+
+Lists technical and soft skills with check-style formatting. The data is editable from the admin panel, allowing dynamic updates.
+
+<img width="600" height="1077" alt="Screenshot_4" src="https://github.com/user-attachments/assets/be5f63b6-7c2d-416a-8920-46e98bec9c0b" />
+
+---
+
+### 🎯 Interests Section
+
+Presents the user's personal interests and hobbies in bullet-list format. Helps add personality to the CV while maintaining a clean design.
+
+<img width="600" height="1079" alt="Screenshot_5" src="https://github.com/user-attachments/assets/8b3c7730-caf5-4e4d-b8b2-d03daeb61caa" />
+
+---
+
+### 🏅 Certifications Section
+
+Lists professional certifications with FontAwesome icons. Each item supports clickable URLs, allowing users to showcase verified achievements.
+
+<img width="600" height="1079" alt="Screenshot_6" src="https://github.com/user-attachments/assets/d306ecb6-54e5-473d-9b09-122a39483530" />
+
+---
+
+### 📬 Contact Section
+
+Contains a fully functional contact form. Messages submitted here are stored in the database and can be reviewed from the admin panel.
+
+<img width="600" height="1079" alt="Screenshot_7" src="https://github.com/user-attachments/assets/cda0d57c-d6e2-47a2-a0e0-5fd69f0b4ba6" />
+
+
