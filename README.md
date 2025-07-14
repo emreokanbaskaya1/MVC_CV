@@ -37,4 +37,10 @@
 - 🎨 **Bootstrap / HTML / CSS / JavaScript**
 - 🔠 **FontAwesome Icons**
 
+## 🧍 About Section – Frontend View
+
+This section introduces the user with a clean and responsive layout, displaying name, contact details, and a detailed self-description. It reflects full-stack skills, academic background, and professional focus.
+
+![About Section Screenshot](<img width="1919" height="1079" alt="Screenshot_2" src="https://github.com/user-attachments/assets/116bffc1-7a50-4b33-9875-3cb614dd8f82" />
+)
 
