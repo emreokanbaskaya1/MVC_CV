@@ -38,4 +38,3 @@
 - 🔠 **FontAwesome Icons**
 
 
-This project reflects a strong foundation in modern web development and practical software architecture, and is designed for real-world use and further extension.
