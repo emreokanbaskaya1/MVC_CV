@@ -185,7 +185,7 @@ Each certification can be added with a name and an external URL. FontAwesome tro
 
 ---
 
-### 🌐 Social Media Links
+### 🌐 Social Media Management
 
 Allows the admin to add clickable social media buttons (LinkedIn, GitHub, etc.) shown in the "About" section of the frontend.
 
