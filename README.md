@@ -30,7 +30,7 @@
 
 ### 🧰 Technologies Used
 
-- 👨‍💻 **C# / ASP.NET MVC5 / .NET Core**
+- 👨‍💻 **C# / ASP.NET MVC5**
 - 🗃️ **SQL Server / MSSQL**
 - 🖼️ **Razor View Engine**
 - 💡 **ADO.NET / LINQ**
