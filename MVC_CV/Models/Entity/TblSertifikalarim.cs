@@ -17,5 +17,6 @@ namespace MVC_CV.Models.Entity
         public int ID { get; set; }
         public string Aciklama { get; set; }
         public string Tarih { get; set; }
+        public string Link { get; set; }
     }
 }

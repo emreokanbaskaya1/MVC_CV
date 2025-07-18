@@ -66,6 +66,17 @@
           <Property Name="Mesaj" Type="varchar" MaxLength="1000" />
           <Property Name="Tarih" Type="date" />
         </EntityType>
+        <EntityType Name="TblProjeler">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProjeAdi" Type="varchar" MaxLength="500" />
+          <Property Name="Aciklama" Type="varchar" MaxLength="1000" />
+          <Property Name="Link" Type="varchar" MaxLength="1000" />
+          <Property Name="Kategori" Type="varchar" MaxLength="500" />
+          <Property Name="Teknolojiler" Type="varchar" MaxLength="500" />
+        </EntityType>
         <EntityType Name="TblSertifikalarim">
           <Key>
             <PropertyRef Name="ID" />
@@ -73,6 +84,7 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Tarih" Type="varchar" MaxLength="30" />
           <Property Name="Aciklama" Type="varchar" MaxLength="250" />
+          <Property Name="Link" Type="varchar" MaxLength="500" />
         </EntityType>
         <EntityType Name="TblSosyalMedya">
           <Key>
@@ -99,6 +111,7 @@
           <EntitySet Name="TblHakkimda" EntityType="Self.TblHakkimda" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblHobilerim" EntityType="Self.TblHobilerim" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tbliletisim" EntityType="Self.Tbliletisim" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblProjeler" EntityType="Self.TblProjeler" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblSertifikalarim" EntityType="Self.TblSertifikalarim" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblSosyalMedya" EntityType="Self.TblSosyalMedya" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblYeteneklerim" EntityType="Self.TblYeteneklerim" Schema="dbo" store:Type="Tables" />
@@ -175,6 +188,7 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Aciklama" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
           <Property Name="Tarih" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Link" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TblYeteneklerim">
           <Key>
@@ -194,6 +208,7 @@
           <EntitySet Name="TblSertifikalarims" EntityType="Self.TblSertifikalarim" />
           <EntitySet Name="TblYeteneklerims" EntityType="Self.TblYeteneklerim" />
           <EntitySet Name="TblSosyalMedyas" EntityType="DbCvModel.TblSosyalMedya" />
+          <EntitySet Name="TblProjelers" EntityType="DbCvModel.TblProjeler" />
         </EntityContainer>
         <EntityType Name="TblSosyalMedya">
           <Key>
@@ -204,6 +219,17 @@
           <Property Name="Link" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="ikon" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="Durum" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="TblProjeler">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProjeAdi" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Aciklama" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Link" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Kategori" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Teknolojiler" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -281,6 +307,7 @@
           <EntitySetMapping Name="TblSertifikalarims">
             <EntityTypeMapping TypeName="DbCvModel.TblSertifikalarim">
               <MappingFragment StoreEntitySet="TblSertifikalarim">
+                <ScalarProperty Name="Link" ColumnName="Link" />
                 <ScalarProperty Name="Tarih" ColumnName="Tarih" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
@@ -303,6 +330,18 @@
                 <ScalarProperty Name="ikon" ColumnName="ikon" />
                 <ScalarProperty Name="Link" ColumnName="Link" />
                 <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblProjelers">
+            <EntityTypeMapping TypeName="DbCvModel.TblProjeler">
+              <MappingFragment StoreEntitySet="TblProjeler">
+                <ScalarProperty Name="Teknolojiler" ColumnName="Teknolojiler" />
+                <ScalarProperty Name="Kategori" ColumnName="Kategori" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="ProjeAdi" ColumnName="ProjeAdi" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>

@@ -1,17 +1,22 @@
 ﻿@using MVC_CV.Models.Entity
 @model List<TblSertifikalarim>
+
 <div class="resume-section-content">
     <h2 class="mb-5">Certifications</h2>
     <ul class="fa-ul mb-0">
         @foreach (var x in Model)
         {
-            <li>
+            <li class="mb-2 d-flex align-items-center">
                 <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                @x.Aciklama
+                <span class="mr-2">@x.Aciklama</span>
+
+                @if (!string.IsNullOrWhiteSpace(x.Link))
+                {
+                    <a href="@x.Link" target="_blank" class="btn btn-sm btn-outline-primary ml-2">
+                        View Certificate
+                    </a>
+                }
             </li>
         }
-        
-
-
     </ul>
 </div>

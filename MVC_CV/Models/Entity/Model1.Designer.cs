@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\user\Desktop\Software Works\Udemy_kurs_murat_hoca_sıfırdan_c-sharp\MVC_CV\MVC_CV\Models\Entity\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\user\Desktop\C# Projects\Udemy_kurs_murat_hoca_sıfırdan_c-sharp\8)MVC_CV_Projesi\MVC_CV\Models\Entity\Model1.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

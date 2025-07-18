@@ -1,0 +1,59 @@
+﻿@model List<MVC_CV.Models.Entity.TblProjeler>
+
+<div class="container mt-5">
+    <!-- Başlık -->
+    <div class="text-left mb-5">
+        <h2 class="text-uppercase font-weight-bold">MY PROJECTS</h2>
+    </div>
+
+    @{
+        var kategoriler = Model.GroupBy(p => p.Kategori).ToList();
+    }
+
+    <!-- Kategoriye göre gruplanmış projeler -->
+    @foreach (var kategori in kategoriler)
+    {
+        <div class="mb-5">
+            <h3 class="text-uppercase text-primary mb-4">@kategori.Key</h3>
+
+            <div class="row">
+                @foreach (var proje in kategori)
+                {
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <!-- Sol taraf: Proje adı, açıklama, GitHub butonu -->
+                                    <div class="w-75 pr-3">
+                                        <h5 class="card-title font-weight-bold">@proje.ProjeAdi</h5>
+                                        <p class="card-text">@proje.Aciklama</p>
+
+                                        @if (!string.IsNullOrWhiteSpace(proje.Link))
+                                        {
+                                            <a href="@proje.Link" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+                                        }
+                                    </div>
+
+                                    <!-- Sağ taraf: Kullanılan teknolojiler -->
+                                    @if (!string.IsNullOrWhiteSpace(proje.Teknolojiler))
+                                    {
+                                        <div class="w-25 pl-3 border-left">
+                                            <small class="text-muted" style="font-size:15px;font-weight:bold">Technologies</small>
+                                            <ul class="mt-2 mb-0" style=" column-gap: 20px; list-style: disc; font-size: 0.95rem; padding-left: 20px; margin-top: 12px; margin-bottom: 0;">
+
+                                                @foreach (var tech in proje.Teknolojiler.Split(','))
+                                                {
+                                                    <li style="font-size: 0.85rem;">@tech.Trim()</li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>

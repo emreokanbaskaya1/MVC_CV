@@ -68,5 +68,16 @@ namespace MVC_CV.Controllers
             ModelState.Clear(); // Formu temizle
             return PartialView();
         }
+
+        public PartialViewResult Projelerim()
+        {
+            var projeler = db.TblProjelers.ToList(); // Entity ismin "TblProjelerim" ise
+            return PartialView(projeler);
+        }
+
+
+
+
+
     }
 }
